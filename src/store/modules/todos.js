@@ -43,9 +43,13 @@ const actions = {
 
 }
 const mutations = {
+  // Set Todos
   setTodos: (state, todos) => (state.todos = todos),
+// New Todo
   newTodo:(state, todo) => (state.todos.unshift(todo)),
+// Remove a Todo
   removeTodo:(state, id) => state.todos = state.todos.filter(todo => todo.id !== id),
+// Update a Todo
   updateTodo:(state, updTodo) => {
     const index = state.todos.findIndex(todo => todo.id === updTodo.id);
     if (index !== -1) {

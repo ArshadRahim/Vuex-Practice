@@ -25,6 +25,8 @@ export default {
 </script>
 
 <style>
+
+/* styles */
 body {
   font-family: 'Baloo Bhaijaan 2', cursive;
   line-height: 1.6;
